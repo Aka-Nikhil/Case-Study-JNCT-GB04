@@ -248,7 +248,7 @@ int main() {
                                         switch (n)
                                         {
                                         case 1:
-                                        level.thanks();
+                                            level.thanks();
                                             break;
                                         case 2:
                                             cout<<"Game over\n";
@@ -261,8 +261,6 @@ int main() {
                                         break;
                                     }
                                     break;
-
-
                                 default:
                                     break;
                                 }
@@ -273,10 +271,14 @@ int main() {
                         default:
                             break;
                     }
-                break;
+                    break;
+                case 2:
+                    cout<<"Game Over"<<endl;
+                    break;
                 default:
                     break;
             }
+        break;
 
         case 3:
             level.displayweapons();
@@ -350,12 +352,13 @@ int main() {
                     }
                 break;
             }
+        break;
         case 4:
             cout << "You are Exitied from game.\n";
             cout<<" ";
             break;
         default:
-            cout<< "Choose the corect option.\n";
+            cout<< "Choose the correct option.\n";
             break;
         }            
     
