@@ -184,16 +184,19 @@ int main() {
                                     case 2:
                                         cout<<"Game over\n";
                                     default:
+                                        cout<< "Choose the correct option.\n";
                                         break;
                                     }
                                     break;
     
                                 default:
+                                    cout<< "Choose the correct option.\n";
                                     break;
                                 }
                                 break;
     
                             default:
+                                cout<< "Choose the correct option.\n";
                                 break;
                         }
                     break;
@@ -201,6 +204,7 @@ int main() {
                         cout<<"Game Over\n";
                         break;
                     default:
+                        cout<< "Choose the correct option.\n";
                         break;
     
                 }
@@ -255,15 +259,18 @@ int main() {
                                             case 2:
                                                 cout<<"Game over\n";
                                             default:
+                                                cout<< "Choose the correct option.\n";
                                                 break;
                                             }
                                             break;
     
                                         default:
+                                            cout<< "Choose the correct option.\n";
                                             break;
                                         }
                                         break;
                                     default:
+                                        cout<< "Choose the correct option.\n";
                                         break;
                                     }
                                 break;
@@ -271,6 +278,7 @@ int main() {
                                 cout<<"Game Over\n";
                                 break;
                             default:
+                                cout<< "Choose the correct option.\n";
                                 break;
                         }
                         break;
@@ -278,6 +286,7 @@ int main() {
                         cout<<"Game Over"<<endl;
                         break;
                     default:
+                        cout<< "Choose the correct option.\n";
                         break;
                 }
             break;
@@ -332,16 +341,19 @@ int main() {
                                             case 2:
                                                 cout<<"Game over\n";
                                             default:
+                                                cout<< "Choose the correct option.\n";
                                                 break;
                                             }
                                             break;
     
                                         default:
+                                            cout<< "Choose the correct option.\n";
                                             break;
                                         }
                                         break;
     
                                     default:
+                                        cout<< "Choose the correct option.\n";
                                         break;
                                     }
                                 break;
@@ -349,6 +361,7 @@ int main() {
                                 cout<<"Game Over\n";
                                 break;
                             default:
+                                cout<< "Choose the correct option.\n";
                                 break;
                         }
                     break;
