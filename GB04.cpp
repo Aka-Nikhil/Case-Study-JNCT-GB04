@@ -131,236 +131,250 @@ int main() {
     Game game;
     level level;
     int n;
+    int b;
+    do{
 
-    game.displayMenu();
-    cout<<"                "<<endl;
-    std::cout << "Enter your choice: ";
-    std::cin >> n;
-
-    switch (n) 
-    {
-        case 1:
-            level.level1();
-            cout<<"Enter Your Option:- ";
-            cin>>n;
-            cout<<"                     "<<endl;
-
-            switch (n)
-            {
-                case 1:
-                level.level2();
-                    
-                    cout<<"Enter Your Option:- ";
-                    cin>>n;
-                    cout<<"                     "<<endl;
-
-                    switch (n)
-                    {
-                        case 1:
+        game.displayMenu();
+        cout<<"                "<<endl;
+        std::cout << "Enter your choice: ";
+        std::cin >> b;
+    
+        switch (b) 
+        {
+            case 1:
+                level.level1();
+                cout<<"Enter Your Option:- ";
+                cin>>n;
+                cout<<"                     "<<endl;
+    
+                switch (n)
+                {
+                    case 1:
+                    level.level2();
                         
-                            cout<<"Game Over\n";
-                            break;
-                        case 2:
-                            level.level3();
-                            cout<<"Enter Your Option:- ";
-                            cin>>n;
-                            switch (n)
-                            {
+                        cout<<"Enter Your Option:- ";
+                        cin>>n;
+                        cout<<"                     "<<endl;
+    
+                        switch (n)
+                        {
                             case 1:
+                            
                                 cout<<"Game Over\n";
                                 break;
                             case 2:
-                                level.level4();
+                                level.level3();
                                 cout<<"Enter Your Option:- ";
                                 cin>>n;
-
                                 switch (n)
                                 {
                                 case 1:
-                                level.thanks();
-                                    break;
-                                case 2:
-                                    cout<<"Game over\n";
-                                default:
-                                    break;
-                                }
-                                break;
-
-                            default:
-                                break;
-                            }
-                            break;
-
-                        default:
-                            break;
-                    }
-                break;
-                case 2:
-                    cout<<"Game Over\n";
-                    break;
-                default:
-                    break;
-
-            }
-        break;
-        case 2:
-            level.displayRules();
-            cout<<"Enter the option:- ";
-            cin>>n;
-            
-        
-            switch (n) 
-            {
-                case 1:
-                    level.level1();
-                    cout<<"Enter Your Option:- ";
-                    cin>>n;
-                    cout<<"                     "<<endl;
-
-                    switch (n)
-                    {
-                        case 1:
-                        level.level2();
-                            cout<<"Enter Your Option:- ";
-                            cin>>n;
-                            cout<<"                     "<<endl;
-
-                            switch (n)
-                                {
-                                case 1:
-
                                     cout<<"Game Over\n";
                                     break;
                                 case 2:
-                                    level.level3();
+                                    level.level4();
                                     cout<<"Enter Your Option:- ";
                                     cin>>n;
-                                    switch (n)
-                                    {
-                                    case 1:
-                                        cout<<"Game Over\n";
-                                        break;
-                                    case 2:
-                                        level.level4();
-                                        cout<<"Enter Your Option:- ";
-                                        cin>>n;
-
-                                        switch (n)
-                                        {
-                                        case 1:
-                                            level.thanks();
-                                            break;
-                                        case 2:
-                                            cout<<"Game over\n";
-                                        default:
-                                            break;
-                                        }
-                                        break;
-
-                                    default:
-                                        break;
-                                    }
-                                    break;
-                                default:
-                                    break;
-                                }
-                            break;
-                        case 2:
-                            cout<<"Game Over\n";
-                            break;
-                        default:
-                            break;
-                    }
-                    break;
-                case 2:
-                    cout<<"Game Over"<<endl;
-                    break;
-                default:
-                    break;
-            }
-        break;
-
-        case 3:
-            level.displayweapons();
-            cout<<"Enter the option:- ";
-            cin>>n;
-            
-        
-            switch (n) 
-            {
-                case 1:
-                    level.level1();
-                    cout<<"Enter Your Option:- ";
-                    cin>>n;
-                    cout<<"                     "<<endl;
-
-                    switch (n)
-                    {
-                        case 1:
-                        level.level2();
-                            cout<<"Enter Your Option:- ";
-                            cin>>n;
-                            cout<<"                     "<<endl;
-
-                            switch (n)
-                                {
-                                case 1:
-
-                                    cout<<"Game Over\n";
-                                    break;
-                                case 2:
-                                    level.level3();
-                                    cout<<"Enter Your Option:- ";
-                                    cin>>n;
-                                    switch (n)
-                                    {
-                                    case 1:
-                                        cout<<"Game Over\n";
-                                        break;
-                                    case 2:
-                                        level.level4();
-                                        cout<<"Enter Your Option:- ";
-                                        cin>>n;
-
-                                        switch (n)
-                                        {
-                                        case 1:
-                                        level.thanks();
-                                            break;
-                                        case 2:
-                                            cout<<"Game over\n";
-                                        default:
-                                            break;
-                                        }
-                                        break;
-
-                                    default:
-                                        break;
-                                    }
-                                    break;
-
-
-                                default:
-                                    break;
-                                }
-                            break;
-                        case 2:
-                            cout<<"Game Over\n";
-                            break;
-                        default:
-                            break;
-                    }
-                break;
-            }
-        break;
-        case 4:
-            cout << "You are Exitied from game.\n";
-            cout<<" ";
-            break;
-        default:
-            cout<< "Choose the correct option.\n";
-            break;
-        }            
     
+                                    switch (n)
+                                    {
+                                    case 1:
+                                    level.thanks();
+                                        break;
+                                    case 2:
+                                        cout<<"Game over\n";
+                                    default:
+                                    cout<< "Choose the correct option.\n";
+                                        break;
+                                    }
+                                    break;
+    
+                                default:
+                                cout<< "Choose the correct option.\n";
+                                    break;
+                                }
+                                break;
+    
+                            default:
+                            cout<< "Choose the correct option.\n";
+                                break;
+                        }
+                    break;
+                    case 2:
+                        cout<<"Game Over\n";
+                        break;
+                    default:
+                    cout<< "Choose the correct option.\n";
+                        break;
+    
+                }
+            break;
+            case 2:
+                level.displayRules();
+                cout<<"Enter the option:- ";
+                cin>>n;
+                
+            
+                switch (n) 
+                {
+                    case 1:
+                        level.level1();
+                        cout<<"Enter Your Option:- ";
+                        cin>>n;
+                        cout<<"                     "<<endl;
+    
+                        switch (n)
+                        {
+                            case 1:
+                            level.level2();
+                                cout<<"Enter Your Option:- ";
+                                cin>>n;
+                                cout<<"                     "<<endl;
+    
+                                switch (n)
+                                    {
+                                    case 1:
+    
+                                        cout<<"Game Over\n";
+                                        break;
+                                    case 2:
+                                        level.level3();
+                                        cout<<"Enter Your Option:- ";
+                                        cin>>n;
+                                        switch (n)
+                                        {
+                                        case 1:
+                                            cout<<"Game Over\n";
+                                            break;
+                                        case 2:
+                                            level.level4();
+                                            cout<<"Enter Your Option:- ";
+                                            cin>>n;
+    
+                                            switch (n)
+                                            {
+                                            case 1:
+                                                level.thanks();
+                                                break;
+                                            case 2:
+                                                cout<<"Game over\n";
+                                            default:
+                                            cout<< "Choose the correct option.\n";
+                                                break;
+                                            }
+                                            break;
+    
+                                        default:
+                                        cout<< "Choose the correct option.\n";
+                                            break;
+                                        }
+                                        break;
+                                    default:
+                                    cout<< "Choose the correct option.\n";
+                                        break;
+                                    }
+                                break;
+                            case 2:
+                                cout<<"Game Over\n";
+                                break;
+                            default:
+                            cout<< "Choose the correct option.\n";
+                                break;
+                        }
+                        break;
+                    case 2:
+                        cout<<"Game Over"<<endl;
+                        break;
+                    default:
+                    cout<< "Choose the correct option.\n";
+                        break;
+                }
+            break;
+    
+            case 3:
+                level.displayweapons();
+                cout<<"Enter the option:- ";
+                cin>>n;
+                
+            
+                switch (n) 
+                {
+                    case 1:
+                        level.level1();
+                        cout<<"Enter Your Option:- ";
+                        cin>>n;
+                        cout<<"                     "<<endl;
+    
+                        switch (n)
+                        {
+                            case 1:
+                            level.level2();
+                                cout<<"Enter Your Option:- ";
+                                cin>>n;
+                                cout<<"                     "<<endl;
+    
+                                switch (n)
+                                    {
+                                    case 1:
+    
+                                        cout<<"Game Over\n";
+                                        break;
+                                    case 2:
+                                        level.level3();
+                                        cout<<"Enter Your Option:- ";
+                                        cin>>n;
+                                        switch (n)
+                                        {
+                                        case 1:
+                                            cout<<"Game Over\n";
+                                            break;
+                                        case 2:
+                                            level.level4();
+                                            cout<<"Enter Your Option:- ";
+                                            cin>>n;
+    
+                                            switch (n)
+                                            {
+                                            case 1:
+                                            level.thanks();
+                                                break;
+                                            case 2:
+                                                cout<<"Game over\n";
+                                            default:
+                                            cout<< "Choose the correct option.\n";
+                                                break;
+                                            }
+                                            break;
+    
+                                        default:
+                                        cout<< "Choose the correct option.\n";
+                                            break;
+                                        }
+                                        break;
+    
+                                    default:
+                                    cout<< "Choose the correct option.\n";
+                                        break;
+                                    }
+                                break;
+                            case 2:
+                                cout<<"Game Over\n";
+                                break;
+                            default:
+                            cout<< "Choose the correct option.\n";
+                                break;
+                        }
+                    break;
+                }
+            break;
+            case 4:
+                cout << "You are Exitied from game.\n";
+                cout<<" ";
+                break;
+            default:
+                cout<< "Choose the correct option.\n";
+                break;
+            }            
+    } while (n!=4);
     return 0;
 } 
